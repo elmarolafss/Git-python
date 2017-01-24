@@ -9,3 +9,20 @@ print("Tölurnar margfaldaðar: %s" % sinnum)
 fornafn = input("\nSláðu inn fornafn: ")
 eftirnafn = input("Sláðu in eftirnafn: ")
 print("Halló %s %s" % (fornafn,eftirnafn))
+#Dæmi3
+lagstafur = 0
+hastafur = 0
+H_eftir_L = 0
+texti = input("Sláðu inn texta: ")
+for c in range(len(texti)):
+    if texti[c].isupper():
+        hastafur += 1
+        if texti[c+1].islower():
+            H_eftir_L += 1
+    if texti[c].islower():
+        lagstafur += 1
+print("Texti: %s" % texti)
+print("Lágstafir: %s" %lagstafur)
+print("Hástafir: %s" %hastafur)
+print("Lágstafur á eftir Hástaf: %s" %H_eftir_L)
+
